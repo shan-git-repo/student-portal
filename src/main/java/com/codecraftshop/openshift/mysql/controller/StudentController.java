@@ -15,7 +15,7 @@ public class StudentController {
 	@Autowired
 	private StudentRepository studentRepository;
 	
-	@RequestMapping(value="/students")
+	@RequestMapping(value="/all")
 	public List<Student> getStudents(){
 		return (List<Student>) studentRepository.findAll();
 	}
